@@ -7,6 +7,9 @@ This example should be seen as an extension to the already existing menhir
 examples (accessible through the directory "demo" in the source code of menhir).
 
 To write this code, I used the example demos/calc from menhir's source code.
+In the files lexer.mll and parser.mly I added comments for my own modifications
+so that the reader of the source code can distinguish between code from INRIA
+and code added by me.
 
 A testfile is attached to avoid misunderstandings with the required file format.
 
