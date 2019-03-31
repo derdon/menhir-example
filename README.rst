@@ -28,9 +28,14 @@ How to compile
 ==============
 ``ocamlbuild calc.native``
 
+Alternatively, there is support for the `dune` (formerly `jbuilder`) build-system:
+```dune builld calc.exe```
+
 How to use
 ==========
 ``./calc.native [filename]``
+
+If you built with dune, run with ``dune exec ./calc.exe [filename]``
 
 This command will print a list of results, represented as an OCaml list.
 

@@ -1,0 +1,10 @@
+(executable
+  (name calc)
+  (modules Parser Lexer Calc)
+  (libraries menhirLib batteries)
+  )
+
+(menhir
+ (modules parser))
+
+(ocamllex lexer)
