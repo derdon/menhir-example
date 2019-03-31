@@ -18,6 +18,7 @@ Dependencies / Requirements
 - OCaml_, tested with version 3.11.2
 - Batteries_, tested with version 1.1.0-1
 - menhir_ , tested with version 20090505
+- Dune_, tested with version 1.8.2
 
 File format
 ===========
