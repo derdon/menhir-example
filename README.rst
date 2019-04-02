@@ -18,6 +18,7 @@ Dependencies / Requirements
 - OCaml_, tested with version 3.11.2
 - Batteries_, tested with version 1.1.0-1
 - menhir_ , tested with version 20090505
+- Dune_, tested with version 1.8.2
 
 File format
 ===========
@@ -28,12 +29,18 @@ How to compile
 ==============
 ``ocamlbuild calc.native``
 
+Alternatively, there is support for the `dune` (formerly `jbuilder`) build-system:
+```dune builld calc.exe```
+
 How to use
 ==========
 ``./calc.native [filename]``
+
+If you built with dune, run with ``dune exec ./calc.exe [filename]``
 
 This command will print a list of results, represented as an OCaml list.
 
 .. _OCaml: http://caml.inria.fr
 .. _Batteries: http://batteries.forge.ocamlcore.org/
 .. _menhir: http://cristal.inria.fr/~fpottier/menhir/
+.. _Dune: https://github.com/ocaml/dune

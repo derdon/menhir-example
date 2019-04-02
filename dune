@@ -1,0 +1,12 @@
+(executable
+  (name calc)
+  (modules Parser Lexer Tokenizer Parsewrap Calc)
+  (libraries menhirLib batteries sedlex)
+  (preprocess (pps sedlex.ppx))
+  (modes byte)
+  )
+
+(menhir
+ (modules parser))
+
+(ocamllex lexer)
